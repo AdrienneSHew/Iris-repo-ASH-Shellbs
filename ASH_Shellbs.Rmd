@@ -22,7 +22,8 @@ I will get the scatterplot started by using ggplot and geom_point
 
 ```{r}
 iris_scat <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
-  geom_point()
+  geom_point()+
+  theme_classic()
 
 iris_scat
 

@@ -1,0 +1,20 @@
+---
+title: "Iris_ASH_Shellbs_markdown"
+author: "Adrienne Hewitt"
+date: "November 14, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Hello, we will be using the iris data to create a scatterplot
+
+```{r}
+library(tidyverse)
+View(iris)
+
+
+```
+

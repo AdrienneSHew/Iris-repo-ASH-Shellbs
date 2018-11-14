@@ -22,8 +22,9 @@ I will get the scatterplot started by using ggplot and geom_point
 
 ```{r}
 iris_scat <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
-  geom_point(colour = "dark green")+
-  theme_classic()
+  geom_point(aes(colour = Species))+
+  theme_classic()+
+  facet_wrap(~Species)
 
 iris_scat
 

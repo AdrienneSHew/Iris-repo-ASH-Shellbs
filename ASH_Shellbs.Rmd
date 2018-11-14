@@ -18,3 +18,13 @@ View(iris)
 
 ```
 
+I will get the scatterplot started by using ggplot and geom_point
+
+```{r}
+iris_scat <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
+  geom_point()
+
+iris_scat
+
+```
+
